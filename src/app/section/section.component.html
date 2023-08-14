@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section</title>
+</head>
+<body>
+    <div class="container my-5">
+
+      <div class="row grid text-center text-light py-5 mx-1">
+       <div class="col-sm rounded-3 mx-2 py-3 my-1" style="background-color: #43A7D8;"> الشكاوي المرفوضه <span class="row text-center my-3 d-flex justify-content-center fw-bold fs-5"> 44 </span></div>
+       <div class="col-sm rounded-3 mx-2 py-3 my-1" style="background-color: #FF6A6F;"> الشكاوي المرفوضه <span class="row text-center my-3 d-flex justify-content-center fw-bold fs-5"> 44 </span> </div>
+       <div class="col-sm rounded-3 mx-2 py-3 my-1" style="background-color: #12AA77;"> شكاوي تم اعتمدها <span class="row text-center my-3 d-flex justify-content-center fw-bold fs-5"> 150 </span> </div>
+       <div class="col-sm rounded-3 mx-2 py-3 my-1" style="background-color: #FDBE7B;"> شكاوي جديده <span class="row text-center my-3 d-flex justify-content-center fw-bold fs-5"> 150 </span> </div>    
+      </div>
+
+      <div class="row grid my-2 mx-1">
+       <div class="col mx-1">
+        <div class="row grid"> 
+            <select class="form-select form-select-sm" style="width: 200px;">
+              <option selected>الكل</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+             </select>
+            <span class="col-sm-2 text-muted">الحالة</span>
+          </div>
+       </div>
+
+       <div class="col mx-1">
+        <div class="row grid"> 
+            <select class="form-select form-select-sm" style="width: 200px;">
+              <option selected>الكل</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+             </select>
+            <span class="col-sm-2 text-muted">التصنيف</span>
+          </div>
+       </div>
+
+       <div class="col mx-1">
+        <div class="row grid"> 
+          <select class="form-select form-select-sm" style="width: 200px;">
+            <option selected>الكل</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+           </select>
+          <span class="col-sm-2 text-muted">التاريخ</span>
+        </div>
+      </div>
+       <div class="col mx-1 text-end">الشكاوي الجديده</div>   
+      </div>
+
+      <div class="row grid my-5 pb-5 text-center">
+        <table>
+            <thead class="bg-success text-light">
+              <tr>
+                <th scope="col" class="py-3"> عرض </th>
+                <th scope="col" class="py-3"> الحالة </th>
+                <th scope="col" class="py-3"> الاداره </th>
+                <th scope="col" class="py-3"> المدينه </th>
+                <th scope="col" class="py-3"> تاريخ الشكوي </th>
+                <th scope="col" class="py-3"> نوع الشكوي </th>
+                <th scope="col" class="py-3"> رقم الشكوي </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of [0,1,2,3,4]" class="border-bottom">
+                <td> <i class="bi bi-eye"></i> </td>
+                <td style="color: #FDBE7B;" class="py-3">تم قبولها</td>
+                <td class="py-3"> ادارة الشكاوي</td>
+                <td class="py-3"> الرياض</td>
+                <td class="py-3"> مايو ,4 ,2023</td>
+                <td class="py-3"> شكوي 1</td>
+                <td class="py-3 fw-bold"> {{i+1}} </td>
+              </tr>
+   
+            </tbody>
+          </table>
+      </div>
+
+    </div>
+</body>
+</html>

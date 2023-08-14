@@ -1,0 +1,14 @@
+/* all {
+ font-family: Tajawal;
+ font-weight: 500;
+ size: 24px;
+} */
+
+tbody > tr:hover {
+    background-color: rgb(240, 237, 237) !important;
+    cursor: pointer;
+}
+
+select {
+    background-color: #E7FFF3;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container mx-auto my-4 py-4">
+     <div class="text-center my-5 mt-2"> اختر نوع الشكوي</div>
+
+     <div class="row grid text-center mx-5 px-2">
+            <!-- one -->
+            <label class="col-sm my-1">
+                <input type="radio" name="product" class="section card-input-element" (change)="handleRadioChange($event)" />
+                <div class="section panel panel-default card-input py-4">
+            <div>
+
+                <div class="container">
+                    <diV class="row d-flex justify-content-center">
+                        <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-file-earmark-image-fill"></i></div>
+                    </diV>
+                    <div class="row d-flex justify-content-center">
+                           ملخص <br> تقييم الاضرار
+                    </div>
+                </div>
+            </div>
+        </div>
+            </label>
+            <!-- two -->
+            <label class="col-sm my-1">
+                <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)"/>
+                <div class="section panel panel-default card-input" style="padding-top: 35px; padding-bottom: 35px;">           
+            <div>
+
+                <div class="container">
+                    <diV class="row d-flex justify-content-center">
+                        <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><img src="assets/imgs/accident.png"></div>
+                    </diV>
+                    <div class="row d-flex justify-content-center">
+                           الابلاغ عن حادث
+                    </div>
+                </div>
+            </div>
+                </div>
+            </label>
+            <!-- three -->
+            <label class="col-sm my-1">
+                <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" />      
+                <div class="section panel panel-default card-input" style="padding-top: 35px; padding-bottom: 35px;">
+            <div>
+
+                <div class="container">
+                    <diV class="row d-flex justify-content-center">
+                        <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-exclamation-octagon-fill"></i></div>
+                    </diV>
+                    <div class="row d-flex justify-content-center">
+                           بلاغ عن احتيال
+                    </div>
+                </div>
+            </div>
+                </div>
+            </label>
+            <!-- four -->
+            <label class="col-sm my-1">
+                <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" />     
+                <div class="section panel panel-default card-input py-4"> 
+            <div>
+
+                <div class="container">
+                    <diV class="row d-flex justify-content-center">
+                        <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-car-front-fill"></i></div>
+                    </diV>
+                    <div class="row d-flex justify-content-center">
+                     احقيه خصم<br> تامين السيارات
+                    </div>
+                </div>
+            </div>
+                </div>
+            </label>
+            <!-- five -->
+            <label class="col-sm my-1">
+                <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+                <div class="section panel panel-default card-input" style="padding-top: 38px; padding-bottom: 38px;">
+
+                <div class="container">
+                    <diV class="row d-flex justify-content-center">
+                        <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><img src="assets/imgs/repair.png"></div>
+                    </diV>
+                    <div class="row d-flex justify-content-center">
+                          صيانة السيارة
+                    </div>
+                </div>
+            </div>
+            </label>
+           
+     </div>
+  
+     <div class="row grid text-center mx-5 px-2 mt-5">
+
+        <!-- one -->
+           <label class="col-sm my-1">
+            <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+            <div class="section panel panel-default card-input py-4">
+            <div class="container">
+              <diV class="row d-flex justify-content-center">
+              <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-car-front-fill"></i></div>
+              </diV>
+              <div class="row d-flex justify-content-center">
+                  احقيه خصم<br> تامين السيارات
+              </div>
+            </div>
+           </div>
+           </label>
+        <!-- two -->
+        <label class="col-sm my-1">
+            <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+            <div class="section panel panel-default card-input py-4">
+
+            <div class="container">
+                <diV class="row d-flex justify-content-center">
+                    <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-file-earmark-image-fill"></i></div>
+                </diV>
+                    <div class="row d-flex justify-content-center">
+                        ملخص <br> تقييم الاضرار
+                    </div>
+            </div>
+        </div>
+        </label>
+
+        <!-- three -->
+        <label class="col-sm my-1">
+            <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+            <div class="section panel panel-default card-input" style="padding-top: 38px; padding-bottom: 38px;">
+
+            <div class="container">
+                <diV class="row d-flex justify-content-center">
+                    <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><img src="assets/imgs/repair.png"></div>
+                </diV>
+                <div class="row d-flex justify-content-center">
+                      صيانة السيارة
+                </div>
+            </div>
+        </div>
+        </label>
+
+        <!-- four -->
+        <label class="col-sm my-1">
+            <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+            <div class="section panel panel-default card-input" style="padding-top: 38px; padding-bottom: 38px;">
+
+            <div class="container">
+                <diV class="row d-flex justify-content-center">
+                    <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><img src="assets/imgs/accident.png"></div>
+                </diV>
+                    <div class="row d-flex justify-content-center">
+                        الابلاغ عن حادث
+                    </div>
+                </div>
+        </div>
+        </label>
+
+        <!-- five -->
+        <label class="col-sm my-1">
+            <input type="radio" name="product" class="card-input-element" (change)="handleRadioChange($event)" /> 
+            <div class="section panel panel-default card-input" style="padding-top: 35px; padding-bottom: 35px;">
+
+            <div class="container">
+                <diV class="row d-flex justify-content-center">
+                    <div class="col-2 border rounded-1 d-flex align-items-center justify-content-center my-2 py-1"><i class="bi bi-exclamation-octagon-fill"></i></div>
+                    </diV>
+                        <div class="row d-flex justify-content-center">
+                            بلاغ عن احتيال
+                        </div>
+            </div>
+        </div>
+        </label>
+
+    </div>
+     
+     <div class="row mt-5 d-flex justify-content-center">
+        <button class="btn col-4 rounded-1" href="" 
+        [class.disabled]="!isAnyRadioChecked"
+        [class.enabled]="isAnyRadioChecked"
+        onClick="window.location.href='/sections';"
+        >تاكيد</button></div>
+    </div>
+</body>
+</html>

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+all{
+    font-family: Tajawal;
+    font-weight: 500;
+    size: 70px;
+   }

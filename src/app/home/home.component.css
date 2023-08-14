@@ -1,0 +1,42 @@
+.section {
+   border: 2px solid rgb(179, 178, 178);
+   border-radius: 3px;
+   background-color: rgba(247, 247, 245, 0.815);
+   cursor: pointer;
+   height: 180px;
+
+   &:hover {
+    background-color: rgba(225, 225, 223, 0.815);
+   }
+   &:active,
+   &:focus,
+   &:checked + .card-input-element + .card-input {
+    background-color: #377a47;
+    border: 2px solid #377a47;
+    color: white;
+   }
+}
+.card-input-element:checked + .card-input {
+    background-color: #377a47;
+    border: 2px solid #377a47;
+    color: white;
+}
+
+all{
+    font-family: Tajawal;
+    font-weight: 500;
+    size: 24px;
+   }
+.card-input-element {
+    display: none;
+}
+
+.disabled {
+    cursor: not-allowed;
+    border: 2px solid rgb(165, 163, 163);
+}
+.enabled {
+    background-color: #377a47;
+    border: 2px solid #377a47;
+    color: white;
+}
